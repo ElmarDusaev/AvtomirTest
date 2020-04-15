@@ -47,9 +47,9 @@ namespace AVtomirTestDB
         {
             using (var connection = new SqlConnection(ConnectionString))
             {
-                //connection.Query("truncate table BICDirectoryEntry");
-                //connection.Query("truncate table ParticipantInfo");
-                //connection.Query("truncate table Accounts");
+                connection.Query("truncate table BICDirectoryEntry");
+                connection.Query("truncate table ParticipantInfo");
+                connection.Query("truncate table Accounts");
             }
         }
 
